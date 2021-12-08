@@ -18,6 +18,7 @@ function App() {
     setValue(e.target.value)
   }
 
+
   const filteredCoins = coins.filter(coin => {
     return coin.name.toLowerCase().startsWith(value.toLocaleLowerCase())
   })
