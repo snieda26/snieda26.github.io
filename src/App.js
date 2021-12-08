@@ -19,7 +19,7 @@ function App() {
   }
 
   const filteredCoins = coins.filter(coin => {
-    return coin.name.toLowerCase().startsWith(value)
+    return coin.name.toLowerCase().startsWith(value.toLocaleLowerCase())
   })
   return (
     <div className="coin-app">
